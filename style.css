@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+
+
+.btn{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 20%;
+    border: 0.25rem solid black;
+    margin: 2rem 1rem 2rem;
+}
+
+@media (max-width: 500px) {
+  .btn{
+    height: 28vw;
+    width: 28vw;
+  }
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    background-color: #d95980;
+}
+.btn2{
+    background-color: #f99b45;
+}
+.btn3{
+    background-color: #63aac0;
+}
+.btn4{
+    background-color: #819ff9;
+}
+.flash{
+    background-color: white;
+}
+
+@media (max-width: 300px) {
+  h1{
+    font-size: 1.75rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+}
