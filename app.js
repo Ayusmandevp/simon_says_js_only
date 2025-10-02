@@ -9,7 +9,7 @@ let btns=["btn1","btn2","btn3","btn4"]
 let started=false;
 let level=0;
 let h2=document.querySelector("h2");
-
+let startbtn=document.querySelector(".start");
 
 
 
@@ -17,7 +17,14 @@ document.addEventListener("keydown",function(){
     if(started==false){
         // console.log("game has started");
         started=true
-
+        startbtn.style.display = "none";
+        levelUp();
+    }
+});
+startbtn.addEventListener("click", function(){
+    if(started==false){
+        started=true
+        startbtn.style.display = "none";
         levelUp();
     }
 });
@@ -89,4 +96,5 @@ function reset(){
     userseq=[];
     level=0;
     score=0;
+    startbtn.style.display = "inline-block"; // show start button again
 }

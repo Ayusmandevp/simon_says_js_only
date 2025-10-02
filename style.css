@@ -1,7 +1,12 @@
 body{
     text-align: center;
 }
-
+.start{
+  background-color: black;
+  color: #ffffff;
+  margin: 1rem;
+  padding: 0.5rem;
+}
 
 .btn{
     height: 18vw;
@@ -15,6 +20,12 @@ body{
   .btn{
     height: 28vw;
     width: 28vw;
+  }
+}
+@media (min-width: 1000px) {
+  .btn{
+    height: 15vw;
+    width: 15vw;
   }
 }
 
